@@ -16,7 +16,7 @@ print("Demonstrating LED brightness control...")
 
 # Set specific brightness (0 to 1)
 print("Setting LED to 50% brightness")
-led.brightness = 0.5  # 50% brightness
+led.value = 0.5  # 50% brightness
 sleep(2)
 
 # Pulse (fade in and out smoothly)
@@ -27,7 +27,7 @@ sleep(10)  # Pulse for 10 seconds
 # Manual brightness control
 print("Gradually increasing brightness from 0% to 100%")
 for brightness in range(0, 11):
-    led.brightness = brightness / 10  # 0%, 10%, 20%... 100%
+    led.value = brightness / 10  # 0%, 10%, 20%... 100%
     print(f"Brightness: {brightness * 10}%")
     sleep(0.5)
 
